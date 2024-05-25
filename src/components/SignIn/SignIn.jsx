@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
 import { Context } from '../../context/Context';
-import './SignIn.css'
 
 
 const SignIn = () => {
