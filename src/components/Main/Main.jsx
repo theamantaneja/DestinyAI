@@ -28,7 +28,7 @@ const Main = () => {
                     <div className="sub-menu">
                         <div className="user-info">
                             <img src={user.picture? user.picture:assets.user_icon} alt="" />
-                            <h4>{user.given_name ? user.given_name + " "+ user.family_name : 'Sign In'}</h4>
+                            <h4>{user.given_name ? user.given_name + " "+ user.family_name : 'Sign in'}</h4>
                         </div>
                         <hr />
                         <a href="#" className='sub-menu-link'>
