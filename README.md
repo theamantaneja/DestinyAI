@@ -1,6 +1,6 @@
 # DestinyAI - A MaxIQ Product
 
-![DestinyAI Logo](destinyai_logo.png)
+![DestinyAI Logo](./src/assets/destinyai_logo.png)
 
 Welcome to DestinyAI, a MaxIQ product founded by Aman Taneja. DestinyAI is an artificial intelligence-powered investment assistant designed to empower investors with intelligent insights and personalized guidance. With an intuitive chat interface and a vision for the future, DestinyAI is poised to redefine the landscape of financial decision-making.
 
@@ -21,10 +21,10 @@ Leverage DestinyAI's advanced artificial intelligence algorithms to gain valuabl
 ## User Interface
 
 A User-Friendly Interface  
-[UI Image 1](ui_image_1.png)
+[UI Image 1](./src/assets/ui_image_1.JPG)
 
 Working on adding more and more features  
-[UI Image 2](ui_image_2.png)
+[UI Image 2](./src/assets/ui_image_2.JPG)
 
 ## Future Plans
 
