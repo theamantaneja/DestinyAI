@@ -21,10 +21,10 @@ Leverage DestinyAI's advanced artificial intelligence algorithms to gain valuabl
 ## User Interface
 
 A User-Friendly Interface  
-[UI Image 1](./src/assets/ui_image_1.JPG)
+[UI Image 1](./src/assets/ui_image_1.png)
 
 Working on adding more and more features  
-[UI Image 2](./src/assets/ui_image_2.JPG)
+[UI Image 2](./src/assets/ui_image_2.png)
 
 ## Future Plans
 
