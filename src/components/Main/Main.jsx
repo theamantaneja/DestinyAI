@@ -1,24 +1,66 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './Main.css'
 import { assets } from '../../assets/assets'
 import { Context } from '../../context/Context'
+import SignIn from '../SignIn/SignIn'
 
 const Main = () => {
 
-    const {onSent, recentPrompt, showResult, loading, resultData, setInput, input} = useContext(Context)
+    const {logout, user, onSent, recentPrompt, showResult, loading, resultData, setInput, input} = useContext(Context)
+
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    }
+
+    const handleLogout = () => {
+        logout();
+    }
 
   return (
     <div className='main'>
         <div className="nav">
             <p>DestinyAI <span> an assistant with Max IQ</span></p>
-            <img src={assets.user_icon} alt="" />
+            <div className="nav-right">
+                <SignIn />
+                <img onClick={toggleMenu} src={user.picture? user.picture:assets.user_icon} alt="" />
+                <div className={`sub-menu-wrap${isOpen ? '-open-menu' : ''}`}>
+                    <div className="sub-menu">
+                        <div className="user-info">
+                            <img src={user.picture? user.picture:assets.user_icon} alt="" />
+                            <h4>Aman Taneja</h4>
+                        </div>
+                        <hr />
+                        <a href="#" className='sub-menu-link'>
+                            <img src={assets.profile} alt="" />
+                            <p>Edit Profile</p>
+                            <span> &gt; </span>
+                        </a>
+                        <a href="#" className='sub-menu-link'>
+                            <img src={assets.setting_icon} alt="" />
+                            <p>Settings & Privacy</p>
+                            <span> &gt; </span>
+                        </a>
+                        <a href="#" className='sub-menu-link'>
+                            <img src={assets.question_icon} alt="" />
+                            <p>Help & Support</p>
+                            <span> &gt; </span>
+                        </a>
+                        <a href="#" className='sub-menu-link'>
+                            <img src={assets.logout} alt="" />
+                            <p onClick={handleLogout}>Logout</p>
+                            <span> &gt; </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div className="main-container">
 
            {!showResult
            ?<> 
                 <div className="greet">
-                <p><span>Hello, Professor.</span></p>
+                <p><span>Hello {user.name ? user.given_name+',': 'User,'}</span></p>
                 <p>How can I assist you today?</p>
             </div>
             <div className="cards">
