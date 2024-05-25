@@ -19,12 +19,9 @@ Navigate DestinyAI with ease using our dynamic drop-down menu. Access key featur
 Leverage DestinyAI's advanced artificial intelligence algorithms to gain valuable insights into market trends, asset performance, and investment opportunities. From risk assessment to portfolio optimization, DestinyAI empowers you with the knowledge to make informed decisions.
 
 ## User Interface
-
-A User-Friendly Interface  
+  
 ![UI Image 1](./src/assets/ui_image_1.png)
 
-Working on adding more and more features  
-![UI Image 2](./src/assets/ui_image_2.png)
 
 ## Future Plans
 
