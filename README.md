@@ -18,9 +18,16 @@ Navigate DestinyAI with ease using our dynamic drop-down menu. Access key featur
 ### 4. Intelligent Insights
 Leverage DestinyAI's advanced artificial intelligence algorithms to gain valuable insights into market trends, asset performance, and investment opportunities. From risk assessment to portfolio optimization, DestinyAI empowers you with the knowledge to make informed decisions.
 
+### 5. Dark Mode
+Experience DestinyAI in a whole new light with our newly added Dark Mode feature. Switch seamlessly between light and dark themes to suit your preference and reduce eye strain during late-night investment sessions.
+
 ## User Interface
   
 ![UI Image 1](./src/assets/ui_image_1.png)
+
+## Dark Mode
+
+![UI Image 2](./src/assets/ui_image_3.png)
 
 
 ## Future Plans
@@ -44,4 +51,3 @@ We value your feedback and contributions to DestinyAI. Whether you have suggesti
 For inquiries, support, or partnership opportunities, please contact us at [theamantaneja@gmail.com](mailto:theamantaneja@gmail.com).
 
 Let DestinyAI guide you towards smarter investments and financial success.
-
