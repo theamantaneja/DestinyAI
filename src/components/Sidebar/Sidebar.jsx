@@ -6,7 +6,7 @@ import { Context } from '../../context/Context'
 const Sidebar = () => {
 
     const [extended, setExtended] = useState(false)
-    const {onSent, prevPrompts, setRecentPrompt, newChat} = useContext(Context)
+    const {themeDark, setThemeDark, onSent, prevPrompts, setRecentPrompt, newChat} = useContext(Context)
 
     const loadPrompt = async (prompt) => {
         setRecentPrompt(prompt)
@@ -14,9 +14,12 @@ const Sidebar = () => {
     }
 
   return (
-    <div className = 'sidebar'>
+    <div className = {themeDark?'sidebar-dark':'sidebar'}>
         <div className="top">
-            <img onClick={()=>setExtended(prev=>!prev)} className='menu' src={assets.menu_icon} alt="" />
+            {themeDark
+            ?<img onClick={()=>setExtended(prev=>!prev)} className='menu' src={assets.menu_icon_w} alt="" />
+            :<img onClick={()=>setExtended(prev=>!prev)} className='menu' src={assets.menu_icon} alt="" />
+            }
             <div onClick={()=>newChat()} className="new-chat">
                 <img src={assets.plus_icon} alt="" />
                 {extended?<p>New Chat</p>:null}
@@ -38,15 +41,24 @@ const Sidebar = () => {
         </div>
         <div className="bottom">
             <div className="bottom-item recent-entry">
-                <img src={assets.question_icon} alt="" />
+               {themeDark
+                ?<img className="question" src={assets.question_icon_w} alt="" />
+                :<img src={assets.question_icon} alt="" />
+               }
                 {extended?<p>Help</p>:null}
             </div>
             <div className="bottom-item recent-entry">
-                <img src={assets.history_icon} alt="" />
+               {themeDark
+                ?<img src={assets.history_icon_w} alt="" />
+                :<img src={assets.history_icon} alt="" />
+                }
                 {extended?<p>Activity</p>:null}
             </div>
             <div className="bottom-item recent-entry">
-                <img src={assets.setting_icon} alt="" />
+               {themeDark
+                ?<img src={assets.setting_icon_w} alt="" />
+                :<img src={assets.setting_icon} alt="" />
+               }
                 {extended?<p>Settings</p>:null}
             </div>
         </div>

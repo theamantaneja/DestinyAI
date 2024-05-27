@@ -12,6 +12,8 @@ const ContextProvider = (props) => {
     const [loading, setLoading] = useState(false);
     const [resultData, setResultData] = useState("");
     const [user, setUser] = useState({});
+    const [themeDark, setThemeDark] = useState(false);
+    
 
     const logout = () => {
         setUser({});
@@ -81,7 +83,10 @@ const ContextProvider = (props) => {
         newChat,
         user,
         setUser,
-        logout
+        logout,
+        themeDark,
+        setThemeDark,
+        
     }
 
     return (
